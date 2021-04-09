@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.game-board {
+  height: 90vmin;
+  width: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  background-color: #9dc5c3;
+  background-image: linear-gradient(315deg, #94a09f 0%, #5e5c5c 74%);
+}
+
+.snake {
+  background-color: hsl(200, 100%, 50%);
+  border: 0.25vmin;
+  border-radius: 0.2rem;
+}
+
+.food {
+  background-color: hsl(50, 100%, 50%);
+}
+
+.score-board {
+  color: rgb(83, 180, 83);
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
